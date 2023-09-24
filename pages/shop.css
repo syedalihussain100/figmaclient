@@ -1,0 +1,643 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000 !important;
+  overflow-x: hidden;
+}
+
+.shop_container {
+  position: relative;
+}
+
+/* navbar start */
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.top {
+  position: absolute;
+  width: 100%;
+}
+
+.top ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  color: white;
+  padding: 20px 0px;
+  font-family: Montserrat;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+/* navbar end here */
+
+.shop_container > img {
+  width: 100%;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 65%;
+  margin: auto;
+}
+
+.container > img {
+  width: 400px;
+  object-fit: contain;
+}
+
+.container > p {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  padding: 5px 0px;
+}
+
+.img_container {
+  padding: 20px;
+}
+
+.img_container > img {
+  margin: 20px 20px;
+  cursor: pointer;
+}
+
+/* second tab */
+
+.second_tab_container {
+  margin: 30px 40px;
+}
+
+.popular {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 70px;
+  /* background-color: red; */
+}
+
+.popular > span {
+  background-color: gray;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.ppv_bold {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  font-family: Inter;
+  text-transform: capitalize;
+}
+
+/* card here */
+.card {
+  /* background-color: white !important; */
+  background-color: #000000;
+  width: 200px;
+  height: auto;
+  margin: 10px 0px;
+  flex: 1;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.2); /* Increase the size on hover */
+}
+
+.card_container {
+  /* background-color: red; */
+  width: 90%;
+  /* height: auto; */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  transition: 0.3s ease-in-out;
+}
+
+.card > img {
+  width: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card > img {
+  transform: translateY(-20px); /* Move content up on hover */
+}
+
+/* animation start */
+/* Keyframes for the left card animation */
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Keyframes for the right card animation */
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animations to the cards */
+.left-card {
+  animation: slideFromLeft 2s ease-in-out;
+}
+
+.right-card {
+  animation: slideFromRight 2s ease-in-out;
+}
+
+/* text animation  */
+/* Define the animation */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Apply the animation to the text */
+.text-animation {
+  animation: fadeInOut 3s ease-in-out infinite; /* Use 'infinite' for continuous looping */
+  text-align: center;
+  /* font-size: 36px; */
+}
+
+/* text rotate */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-text {
+  animation: rotate 4s linear infinite; /* Rotate continuously in 4 seconds */
+}
+
+/* animation end */
+
+.p1 {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 1px;
+  color: #fff;
+}
+
+.p2 {
+  font-family: Montserrat;
+  color: #aaaaaaaa;
+  font-size: 13px;
+}
+
+.card_message {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-top: 13px;
+}
+
+.card_message span {
+  font-size: 13px;
+}
+
+.message_me {
+  color: #ffffff !important;
+  opacity: 0.5 !important;
+  font-size: Montserrat;
+}
+
+.card_message > img {
+  margin: 0px 5px;
+}
+
+.video_span {
+  font-family: Inter;
+  color: #ffffff !important;
+  opacity: 0.5;
+  font-size: 11px !important;
+  margin-left: 40px;
+}
+
+/* card_bottom */
+.card_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red !important; */
+  background-color: #ffffff24 !important;
+  margin-top: 20px;
+  padding: 10px;
+  /* height: 50px; */
+}
+
+.buy,
+.right_ {
+  color: #00aff0;
+  font-family: Inter;
+  font-size: 13px;
+}
+
+.fans_logo {
+  width: 80px;
+  margin: 0px 10px;
+}
+
+/* footer here design */
+
+footer {
+  background-image: url("../images/footer/shopFooter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center center;
+  height: auto;
+  color: #fff;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.footer_logo {
+  width: 200px;
+  margin: 30px 0px;
+}
+
+.footer_first {
+  width: 400px;
+  /* background-color: red; */
+}
+
+.footer_first > p {
+  font-family: Montserrat;
+  font-size: 13px;
+}
+
+/*  */
+.footer_second > ul > li {
+  margin: 20px 0px;
+  font-family: Montserrat;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/*  */
+.footer_third > ul > li {
+  margin: 20px 0px;
+  font-family: Montserrat;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.footer_fourth > ul > li {
+  margin: 20px 0px;
+  font-family: Montserrat;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.footer_fourth > ul > li > .fa-brands {
+  font-size: 1.2rem;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+
+/*  */
+.footer_div_center {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+  background-color: #000000b2;
+  width: 95%;
+  margin: auto;
+  height: 10vh;
+  padding: 5px;
+}
+
+.footer_div_center_one {
+  width: 52rem;
+}
+
+.footer_div_center_two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-family: Montserrat;
+  font-size: 13px;
+}
+
+.footer_a1 {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer_a2 {
+  background-color: #868687;
+  border-radius: 2px;
+  padding: 10px 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Navbar Animation start here */
+.navigation li.nav-item a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative; /* Add position relative for the underline */
+}
+
+.navigation li.nav-item a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff; /* Color of the underline */
+  transform: scaleX(0); /* Initial scale to hide the underline */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out; /* Add animation to the underline */
+}
+
+.navigation li.nav-item a:hover::before {
+  transform: scaleX(1); /* Scale the underline to full width on hover */
+  transform-origin: bottom left;
+}
+
+
+/* responsive here style  */
+
+@media (max-width: 768px) {
+  .card_container {
+    /* background-color: red; */
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .container {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .container p {
+    padding: 5px 0px;
+    font-size: 0.7rem;
+
+    /* width: 100%; */
+  }
+
+  .card:hover {
+    transform: scale(1); /* Set the scale to 1 to disable the hover animation */
+  }
+
+  .card:hover .card > img {
+    transform: translateY(0); /* Reset the content translation */
+  }
+
+  .container > img {
+    width: 150px;
+  }
+
+  .popular {
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+  }
+
+  .img_container {
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .img_container > img {
+    display: none;
+    /* margin: 0;
+    margin: 0px 20px; */
+  }
+
+  .ppv_bold {
+    font-size: 0.9rem;
+  }
+
+  .popular span {
+    height: 20px;
+    width: 23px;
+    font-size: 0.9rem;
+  }
+
+  .p1 {
+    font-size: 0.7rem;
+  }
+
+  .p2 {
+    font-size: 0.7rem;
+  }
+
+  .video_span {
+    font-size: 0.6rem !important;
+  }
+
+  .buy {
+    font-size: 0.7rem;
+  }
+  .fans_logo {
+    width: 65px;
+  }
+
+  .right_ > p {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer_container {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .footer_logo {
+    width: 150px;
+    margin: auto;
+  }
+
+  .footer_div_center {
+    display: none;
+  }
+
+  .top ul {
+    opacity: 0;
+    flex-direction: column;
+  }
+
+  .left_top {
+    display: none;
+  }
+
+  .left_bottom {
+    display: none;
+  }
+
+  .toogle {
+    position: relative;
+    background: url("../images/home/bar.png");
+    height: 35px;
+    width: 35px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    display: block;
+  }
+
+  .toogle.active {
+    position: relative;
+    background: url("../images/home/close.png");
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    z-index: 999;
+  }
+
+  .navigation {
+    display: block;
+    /* overflow-x: hidden; */
+  }
+
+  /* target this class then run toggle navigation */
+  ul.navigation.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/home/Listbox\ →\ Option\ →\ Figure.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding-top: 50%; */
+    transition: 0.3s all ease-in-out;
+    z-index: 100;
+    opacity: 10;
+  }
+  ul.navigation.active li {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container p {
+    padding: 2px 0px;
+    font-size: 0.5rem;
+  }
+
+  .container > img {
+    width: 100px;
+    margin: 10px 0px;
+  }
+
+  .container > p {
+    padding: 0px 40px;
+  }
+
+  .card {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+  }
+
+  .footer_first > p {
+    font-size: 0.6rem;
+    padding: 0px 70px;
+    text-align: center;
+  }
+
+  .footer_second > ul > li {
+    font-size: 0.6rem;
+  }
+
+  .footer_third > ul > li {
+    font-size: 0.6rem;
+  }
+
+  .footer_fourth > ul > li {
+    font-size: 0.6rem;
+  }
+
+  .footer_fourth > ul > li > .fa-brands {
+    font-size: 0.6rem;
+  }
+
+  .footer_logo {
+    width: 100px;
+    margin: 10px 0px;
+  }
+}

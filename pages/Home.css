@@ -1,0 +1,621 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider-container{
+  display: none;
+}
+
+
+
+
+
+
+body {
+  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  transition: background-image 0.5s ease;
+}
+
+.home_container {
+  height: 100vh;
+  width: 100vw;
+ 
+}
+img {
+  cursor: pointer;
+  max-width: 100% !important;
+}
+
+.right_pic_container {
+  height: 100vh;
+  width: auto;
+  flex: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+  border-top: 8px solid black;
+  border-left: 8px solid black;
+  /* border-bottom: 8px solid black; */
+  border-right: 8px solid black;
+}
+
+.right_pic_container .oneImg {
+  width: 100%;
+  border-bottom: 8px solid black;
+  height: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.oneImg.active {
+  border:  4px solid #007BFF;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.top {
+  /* position: absolute; */
+  width: 100%;
+}
+
+.top ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  color: white;
+  padding: 20px 0px;
+  font-family: Montserrat;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.left > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120px;
+}
+
+.left_center {
+  margin: 0px 55px;
+}
+
+.left_center {
+  position: absolute;
+  top: 25%;
+  color: white;
+}
+
+.left_center > img {
+  width: 200px;
+}
+
+.left_center > p {
+  font-family: Montserrat;
+  font-size: 13px;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.left_top {
+  position: relative;
+  top: -20px;
+  left: 7px;
+}
+
+.left_bottom {
+  position: relative;
+  left: 7px;
+}
+
+.shop {
+  font-family: Montserrat;
+  font-size: 13px;
+  width: 100px;
+  cursor: pointer;
+  position: relative;
+  top: -14px;
+  margin-left: 12px;
+  transition: 0.3s all ease;
+}
+
+/* .shop:hover {
+  background-color: #000000b2;
+} */
+
+.shop > p {
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+
+.b1 {
+  border-top: 1px solid white;
+}
+
+.b2 {
+  border-left: 1px solid white;
+  height: 15px;
+}
+.b3 {
+  border-right: 1px solid white;
+  height: 15px;
+  position: relative;
+  top: -15px;
+}
+.b4 {
+  border-bottom: 1px solid white;
+  height: 15px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+/* bottom_line_Container */
+.bottom_line_Container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.bottom_line {
+  width: 100px;
+  height: 1px;
+  background-color: white;
+}
+
+.icons_bootom_container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  margin-left: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.bar {
+  display: none;
+}
+
+.barclose {
+  display: none !important;
+}
+
+/* footer part here */
+footer {
+  background-image: url("../images/footer/shopFooter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center center;
+  height: auto;
+  color: #fff;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.footer_logo {
+  width: 200px;
+  margin: 30px 0px;
+}
+
+.footer_first {
+  width: 400px;
+  /* background-color: red; */
+}
+
+.footer_first > p {
+  font-family: Montserrat;
+  font-size: 13px;
+}
+
+/*  */
+.footer_second > ul > li {
+  margin: 20px 0px;
+  font-family: Montserrat;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/*  */
+.footer_third > ul > li {
+  margin: 20px 0px;
+  font-family: Montserrat;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.footer_fourth > ul > li {
+  margin: 20px 0px;
+  font-family: Montserrat;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.footer_fourth > ul > li > .fa-brands {
+  font-size: 1.2rem;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+
+/*  */
+.footer_div_center {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+  background-color: #000000b2;
+  width: 95%;
+  margin: auto;
+  height: 10vh;
+  padding: 10px;
+}
+
+.footer_div_center_one {
+  width: 52rem;
+}
+
+.footer_div_center_two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-family: Montserrat;
+  font-size: 13px;
+}
+
+.footer_a1 {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer_a2 {
+  background-color: #868687;
+  border-radius: 2px;
+  padding: 10px 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Navbar Animation start here */
+li.nav-item a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative; /* Add position relative for the underline */
+}
+
+li.nav-item a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff; /* Color of the underline */
+  transform: scaleX(0); /* Initial scale to hide the underline */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out; /* Add animation to the underline */
+}
+
+li.nav-item a:hover::before {
+  transform: scaleX(1); /* Scale the underline to full width on hover */
+  transform-origin: bottom left;
+}
+
+/* text typing animation here */
+
+.typed-text {
+  /* display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid #000; /* Cursor effect */
+  white-space: nowrap;
+  animation: typing 2s steps(40, end), blink-caret 0.5s step-end infinite;
+}
+
+/* Keyframes for the typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Keyframes for the cursor blinking effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
+
+/* Keyframes for the left card animation */
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* Keyframes for the right card animation */
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animations to the cards */
+.left-card {
+  animation: slideFromLeft 2s ease-in-out;
+}
+
+.right-card {
+  animation: slideFromRight 2s ease-in-out;
+}
+
+
+/* testing navbar here */
+
+/* media query screen here */
+
+/* Add this CSS for small screens (e.g., mobile) */
+@media screen and (max-width: 900px) {
+
+  .slider-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+    width: 110vw;
+    height: auto;
+    white-space: nowrap;
+    /* border: 8px solid black; */
+  }
+  
+  .slider {
+    display: inline-flex;
+  }
+  
+  .slider img {
+    border-top: 8px solid black;
+    border-bottom: 8px solid black;
+    border-right: 8px solid black;
+    width: 300px; /* Adjust the image width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Adjust spacing between images as needed */
+  }
+  .slider-container{
+    display: block;
+  }
+
+  footer {
+    height: auto;
+    width: 110vw;
+  }
+
+  .footer_container {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 30px 0px;
+  }
+
+  .footer_logo {
+    width: 150px;
+    margin: auto;
+  }
+
+  .footer_div_center {
+    display: none;
+  }
+
+  .shop {
+    display: none;
+  }
+  .top ul {
+    opacity: 0;
+    flex-direction: column;
+  }
+
+  .left_top {
+    display: none;
+  }
+
+  .left_bottom {
+    display: none;
+  }
+
+  .toogle {
+    position: relative;
+    background: url("../images/home/bar.png");
+    height: 35px;
+    width: 35px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    display: block;
+  }
+
+  .toogle.active {
+    position: relative;
+    background: url("../images/home/close.png");
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    z-index: 999;
+  }
+
+  .navigation {
+    display: block;
+    /* overflow-x: hidden; */
+  }
+
+  /* target this class then run toggle navigation */
+  ul.navigation.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/home/Listbox\ →\ Option\ →\ Figure.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding-top: 50%; */
+    transition: 0.3s all ease-in-out;
+    z-index: 100;
+    opacity: 10;
+  }
+  ul.navigation.active li {
+    margin: 10px;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .right_pic_container {
+    display: none;
+  }
+
+  .left_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+  }
+
+  .shop {
+    margin: auto;
+  }
+
+  .bottom_line_Container {
+    justify-content: center;
+  }
+
+  .left_center > img {
+    width: 150px;
+  }
+
+  .left_center > p {
+    padding-bottom: 8px;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+
+  .bottom_line_res {
+    height: 150px;
+    width: 100%;
+    background-image: url("../images/home/bottom_0.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  .icons_bootom_container {
+    bottom: 0px;
+    /* top: 0px; */
+  }
+}
+
+/*  */
+
+@media (max-width: 300px) {
+
+  .footer{
+    height: auto;
+    width: 110vw;
+  }
+  .contact_dinner_logo {
+    width: 100px;
+  }
+
+  .footer_first > p {
+    font-size: 0.6rem;
+    padding: 0px 70px;
+    text-align: center;
+  }
+
+  .footer_second > ul > li {
+    font-size: 0.6rem;
+  }
+
+  .footer_third > ul > li {
+    font-size: 0.6rem;
+  }
+
+  .footer_fourth > ul > li {
+    font-size: 0.6rem;
+  }
+
+  .footer_fourth > ul > li > .fa-brands {
+    font-size: 0.6rem;
+  }
+
+  .footer_logo {
+    width: 100px;
+    margin: 10px 0px;
+  }
+}

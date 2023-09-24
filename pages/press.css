@@ -1,0 +1,603 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.right_pic_container > img {
+  height: 100% !important;
+  width: 130px !important;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  background-image: url("../images/press/pressFooter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center center;
+  height: 100%;
+  color: #fff;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.footer_logo {
+  width: 200px;
+  margin: 30px 0px;
+}
+
+.footer_first {
+  width: 400px;
+  /* background-color: red; */
+}
+
+.footer_first > p {
+  font-family: Montserrat;
+  font-size: 13px;
+}
+
+/*  */
+.footer_second > ul > li {
+  margin: 20px 0px;
+  font-family: Montserrat;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/*  */
+.footer_third > ul > li {
+  margin: 20px 0px;
+  font-family: Montserrat;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.footer_fourth > ul > li {
+  margin: 20px 0px;
+  font-family: Montserrat;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.footer_fourth > ul > li > .fa-brands {
+  font-size: 1.2rem;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+
+/*  */
+.footer_div_center {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+  background-color: #000000b2;
+  width: 95%;
+  margin: auto;
+  height: 10vh;
+  padding: 10px;
+}
+
+.footer_div_center_one {
+  width: 52rem;
+}
+
+.footer_div_center_two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-family: Montserrat;
+  font-size: 13px;
+}
+
+.footer_a1 {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer_a2 {
+  background-color: #868687;
+  border-radius: 2px;
+  padding: 10px 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.top {
+  position: absolute;
+  width: 100%;
+}
+
+.top ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  color: white;
+  padding: 20px 0px;
+  font-family: Montserrat;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.left > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120px;
+}
+
+.left_center {
+  margin: 0px 55px;
+}
+
+.left_center {
+  position: absolute;
+  top: 25%;
+  color: white;
+}
+
+.left_center > img {
+  width: 200px;
+}
+
+.left_center > p {
+  font-family: Montserrat;
+  font-size: 13px;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.left_top {
+  position: relative;
+  top: -20px;
+  left: 7px;
+}
+
+.left_bottom {
+  position: relative;
+  left: 7px;
+}
+
+.shop {
+  font-family: Montserrat;
+  font-size: 13px;
+  width: 100px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  margin-left: 12px;
+  transition: 0.3s all ease;
+}
+
+/* .shop:hover {
+  background-color: #000000b2;
+} */
+
+.shop > p {
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+
+.b1 {
+  border-top: 1px solid white;
+}
+
+.b2 {
+  border-left: 1px solid white;
+  height: 15px;
+}
+.b3 {
+  border-right: 1px solid white;
+  height: 15px;
+  position: relative;
+  top: -15px;
+}
+.b4 {
+  border-bottom: 1px solid white;
+  height: 15px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.year {
+  font-family: Inter;
+  font-size: 11px;
+  padding-bottom: 6px;
+}
+
+.press_child_container {
+  color: #ffffff;
+  width: 500px;
+  height: 240px;
+  /* border: 1px solid white; */
+  padding: 20px;
+  position: relative;
+  top: 15%;
+  left: 4%;
+}
+
+.press_line {
+  width: 45px;
+  height: 3px;
+  background-color: #fff;
+  margin: 2px 0px;
+}
+
+.press_child_container > h3 {
+  color: white;
+  font-family: Montserrat;
+  font-weight: bolder;
+  font-size: 25px;
+  letter-spacing: 3px;
+  margin: 2px 0px;
+}
+
+.para {
+  font-family: Montserrat;
+  font-weight: bolder;
+  font-size: 13px;
+  word-spacing: 7px;
+  width: 400px;
+  line-height: 20px;
+  margin: 5% 0px;
+}
+
+/* part 2 */
+
+.press_child_container_2 {
+  color: white;
+  font-weight: bolder;
+  position: relative;
+  /* left: 8%; */
+  top: 5%;
+  padding-top: 50px;
+  transition: 0.3s all ease;
+}
+
+.press_child_container_2 > div {
+  display: flex;
+  align-items: center;
+  padding: 2px 0px;
+}
+
+.press_child_container_2 > div > span {
+  font-family: Inter;
+  font-size: 11px;
+}
+
+.press_child_container_2 > div > p {
+  font-family: Montserrat;
+  font-weight: normal;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.press_center_part_here {
+  background-image: url("../images/press/press.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 110vh;
+  /* border: 1px solid #fff; */
+}
+
+.press_child_left_here {
+  color: #fff;
+}
+
+.main_container {
+  height: 100vh;
+  width: 85%;
+  margin: auto;
+  background-color: transparent;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.mainContainerhere {
+  padding-top: 50px;
+  width: 80%;
+  /* background-color: red; */
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  gap: 160px;
+}
+
+.right_container_here {
+  color: #fff;
+  padding: 100px 20px;
+  transition: 0.3s all ease;
+}
+
+.right_container_here > h3 {
+  font-size: 1.8rem;
+  font-family: Montserrat;
+}
+
+/* Navbar Animation start here */
+li.nav-item a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative; /* Add position relative for the underline */
+}
+
+li.nav-item a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff; /* Color of the underline */
+  transform: scaleX(0); /* Initial scale to hide the underline */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-in-out; /* Add animation to the underline */
+}
+
+li.nav-item a:hover::before {
+  transform: scaleX(1); /* Scale the underline to full width on hover */
+  transform-origin: bottom left;
+}
+
+/* animation start here */
+
+
+/* Keyframes for the left card animation */
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* Keyframes for the right card animation */
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animations to the cards */
+.left-card {
+  animation: slideFromLeft 2s ease-in-out;
+}
+
+.right-card {
+  animation: slideFromRight 2s ease-in-out;
+}
+
+
+
+
+/* responsive here */
+
+@media (max-width: 900px) {
+  .main_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .press_center_part_here {
+    background-image: url("../images/press/press.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #fff; */
+  }
+  .press_line {
+    margin: auto;
+  }
+
+  .pressContainer {
+    height: 100% !important;
+    width: 100%;
+  }
+
+  .right_container_here {
+    padding: 0;
+  }
+
+  .right_container_here > h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .year {
+    padding: 10px 0px;
+    text-align: center;
+  }
+
+  .press_child_container_2 {
+    padding: 0;
+    left: 0;
+    top: -150px;
+  }
+
+  .press_child_container_2 > div {
+    flex-direction: column;
+    padding: 5px 0px;
+  }
+
+  .para {
+    font-size: 0.7rem;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .press_child_container_2 > div > span {
+    font-size: 0.6rem;
+  }
+
+  .press_child_container_2 > div > p {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .mainContainerhere {
+    flex-direction: column;
+  }
+
+  .top ul {
+    opacity: 0;
+    flex-direction: column;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .toogle {
+    position: relative;
+    background: url("../images/home/bar.png");
+    height: 35px;
+    width: 35px;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    display: block;
+  }
+
+  .toogle.active {
+    position: relative;
+    background: url("../images/home/close.png");
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    z-index: 999;
+  }
+
+  .navigation {
+    display: block;
+    /* overflow-x: hidden; */
+  }
+
+  /* target this class then run toggle navigation */
+  ul.navigation.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../images/home/Listbox\ →\ Option\ →\ Figure.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding-top: 50%; */
+    transition: 0.3s all ease-in-out;
+    z-index: 100;
+    opacity: 10;
+  }
+  ul.navigation.active li {
+    margin: 10px;
+  }
+
+  .shop {
+    display: none;
+  }
+  .footer_container {
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+  }
+
+  .footer{
+    height: 55vh;
+  }
+
+  .footer_logo {
+    width: 150px;
+    margin: auto;
+  }
+
+  .footer_div_center {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer_first > p {
+    font-size: 0.6rem;
+    padding: 0px 70px;
+    text-align: center;
+  }
+
+  .footer_second > ul > li {
+    font-size: 0.6rem;
+  }
+
+  .footer_third > ul > li {
+    font-size: 0.6rem;
+  }
+
+  .footer_fourth > ul > li {
+    font-size: 0.6rem;
+  }
+
+  .footer_fourth > ul > li > .fa-brands {
+    font-size: 0.6rem;
+  }
+
+  .footer_logo {
+    width: 100px;
+    margin: 10px 0px;
+  }
+}

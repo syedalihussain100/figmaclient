@@ -1,0 +1,25 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the flex container */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; /* To create space between columns */
+    align-items: center; /* To vertically center items */
+    border: 1px solid #ccc; /* Optional: Add a border for visualization */
+    padding: 10px; /* Optional: Add padding for spacing */
+}
+
+/* Style the columns */
+.column {
+    flex-basis: 30%; /* Each column takes 50% of the available space */
+    background-color: #f0f0f0;
+    padding: 10px; /* Optional: Add padding for spacing within columns */
+    border: 1px solid #ddd; /* Optional: Add a border for visualization */
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
