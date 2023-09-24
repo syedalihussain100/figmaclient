@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("../../images/contact/Contact\ Us.png");
+  background-image: url("../images/contact/Contact\ Us.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -275,7 +275,7 @@ a {
 }
 
 .footer {
-  background-image: url("../../images/footer/shopFooter.jpg");
+  background-image: url("../images/footer/shopFooter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -594,7 +594,7 @@ li.nav-item a:hover::before {
 
   .toogle {
     position: relative;
-    background: url("../../images/home/bar.png");
+    background: url("../images/home/bar.png");
     height: 35px;
     width: 35px;
     background-size: 25px;
@@ -607,7 +607,7 @@ li.nav-item a:hover::before {
 
   .toogle.active {
     position: relative;
-    background: url("../../images/home/close.png");
+    background: url("../images/home/close.png");
     height: 20px;
     width: 20px;
     margin-left: 5px;
@@ -632,7 +632,7 @@ li.nav-item a:hover::before {
     left: 0;
     height: 100vh;
     width: 100%;
-    background-image: url("../../images/home/Listbox\ →\ Option\ →\ Figure.png");
+    background-image: url("../images/home/Listbox\ →\ Option\ →\ Figure.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
