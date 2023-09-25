@@ -54,6 +54,9 @@ a {
 .navigation > li > a {
   color: #fff !important;
 }
+.navigation{
+  display: none;
+}
 
 /* shop nav */
 .shop {

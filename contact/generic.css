@@ -57,6 +57,10 @@ ul {
   color: #fff !important;
 }
 
+.navigation{
+  display: none;
+}
+
 /* shop nav */
 .shop {
   font-family: Montserrat;

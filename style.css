@@ -42,6 +42,10 @@ ul {
   list-style-type: none;
 }
 
+.navigation{
+  display: none;
+}
+
 /* navbar logo */
 ._imgLogo_container > img {
   width: 110px;

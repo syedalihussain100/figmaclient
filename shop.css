@@ -9,6 +9,10 @@ body {
   overflow-x: hidden;
 }
 
+.navigation{
+  display: none;
+}
+
 .shop_container {
   position: relative;
 }

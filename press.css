@@ -16,6 +16,10 @@ body{
   overflow-x: hidden;
 }
 
+.navigation{
+  display: none;
+}
+
 ul {
   list-style-type: none;
 }
