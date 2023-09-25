@@ -11,6 +11,22 @@
       src="https://kit.fontawesome.com/4b1e90bdd7.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 20) {
+          // Change the background color of the container when scrolled
+          document.querySelector(".top").style.backgroundColor = "black"; 
+          document.querySelector(".top").style.position = "fixed";
+          document.querySelector(".top").style.width = "100%";
+          document.querySelector(".top").style.top = "0px"
+          document.querySelector(".top").style.zIndex = "100"
+
+        } else {
+          // Reset the background color of the container to transparent
+          document.querySelector(".top").style.backgroundColor = "transparent"; // Reset to default background color
+        }
+      });
+    </script>
   </head>
   <body>
     <div class="top">
@@ -22,7 +38,7 @@
         <li class="nav-item"><a href="../index.html">HOME</a></li>
         <li class="nav-item"><a href="#">Video</a></li>
         <li class="nav-item"><a href="../press.html">PRESS</a></li>
-        <li class="nav-item"><a href="../contact/contact.html">CONTACT ME</a></li>
+        <li class="nav-item"><a href="./contact.html">CONTACT ME</a></li>
         <li class="nav-item"><a href="../blog.html">BLOG</a></li>
       </ul>
       <div class="shop left-card">

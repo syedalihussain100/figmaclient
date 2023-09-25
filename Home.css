@@ -8,12 +8,21 @@
   display: none;
 }
 
+._imgLogo_container > img{
+  width: 140px;
+}
+
+._imgLogo_container{
+  height: 0px;
+}
+
 body {
   overflow-x: hidden;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  width: 100vw;
+  /* background-attachment: scroll; */
+  width: 100%;
   height: 100vh;
   position: relative;
   transition: background-image 0.5s ease;
@@ -23,6 +32,7 @@ body {
   height: 100vh;
   width: 100vw;
 }
+
 img {
   cursor: pointer;
   max-width: 100% !important;
@@ -69,6 +79,7 @@ a {
 .top {
   /* position: absolute; */
   width: 100%;
+  transition: 0.8s all ease-in-out;
 }
 
 .navigation{
@@ -92,7 +103,7 @@ a {
   position: absolute;
   left: 0;
   top: 0;
-  width: 120px;
+  width: 140px;
 }
 
 .left_center {
@@ -106,7 +117,7 @@ a {
 }
 
 .left_center > img {
-  width: 200px;
+  width: 300px;
 }
 
 .left_center > p {
@@ -307,7 +318,9 @@ a {
 /* Navbar Animation start here */
 li.nav-item a {
   display: block;
-  color: white;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: Montserrat;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -458,6 +471,15 @@ li.nav-item a:hover::before {
   .shop {
     display: none;
   }
+
+  .top{
+    background-color: transparent !important;
+  }
+
+  ._imgLogo_container{
+    display: none;
+  }
+
   .top ul {
     opacity: 0;
     /* flex-direction: column; */

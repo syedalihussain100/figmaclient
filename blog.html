@@ -9,6 +9,22 @@
       src="https://kit.fontawesome.com/4b1e90bdd7.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 20) {
+          // Change the background color of the container when scrolled
+          document.querySelector(".top1").style.backgroundColor = "black"; 
+          document.querySelector(".top1").style.position = "fixed";
+          document.querySelector(".top1").style.width = "100%";
+          document.querySelector(".top1").style.top = "0px"
+          document.querySelector(".top1").style.zIndex = "100"
+
+        } else {
+          // Reset the background color of the container to transparent
+          document.querySelector(".top1").style.backgroundColor = "transparent"; // Reset to default background color
+        }
+      });
+    </script>
   </head>
   <body>
     <!-- first part here -->
@@ -37,11 +53,11 @@
           <img src="./images/IMG_06771.png" alt="logo" />
         </div>
         <ul class="navigation">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#">Video</a></li>
-          <li><a href="./press.html">PRESS</a></li>
-          <li><a href="./contact/contact.html">CONTACT ME</a></li>
-          <li><a href="./blog.html">BLOG</a></li>
+          <li class="nav-item"><a href="./index.html">Home</a></li>
+          <li class="nav-item"><a href="#">Video</a></li>
+          <li class="nav-item"><a href="./press.html">PRESS</a></li>
+          <li class="nav-item"><a href="./contact/contact.html">CONTACT ME</a></li>
+          <li class="nav-item"><a href="./blog.html">BLOG</a></li>
         </ul>
         <div class="shop">
           <p><a href="./shop.html">SHOP</a></p>

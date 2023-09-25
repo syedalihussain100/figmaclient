@@ -12,6 +12,14 @@
   top: 0;
 }
 
+._imgLogo_container > img{
+  width: 140px;
+}
+
+._imgLogo_container{
+  height: 0px;
+}
+
 body{
   overflow-x: hidden;
 }
@@ -132,6 +140,7 @@ a {
 .top {
   position: absolute;
   width: 100%;
+  transition: 0.8s all ease-in-out;
 }
 
 .top ul {
@@ -139,7 +148,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  color: white;
+  color: #ffffff;
   padding: 20px 0px;
   font-family: Montserrat;
   cursor: pointer;
@@ -350,7 +359,9 @@ a {
 /* Navbar Animation start here */
 li.nav-item a {
   display: block;
-  color: white;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: Montserrat;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -417,6 +428,13 @@ li.nav-item a:hover::before {
 
 @media (max-width: 900px) {
 
+  ._imgLogo_container{
+    display: none;
+  }
+
+  .top{
+    background-color: transparent !important;
+  }
 
   .main_container {
     flex-direction: column;

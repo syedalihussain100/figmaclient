@@ -30,6 +30,7 @@ a {
 .top {
   position: absolute;
   width: 100%;
+  transition: 0.8s all ease-in-out;
 }
 
 .top ul {
@@ -399,7 +400,9 @@ footer {
 /* Navbar Animation start here */
 .navigation li.nav-item a {
   display: block;
-  color: white;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: Montserrat;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -529,6 +532,9 @@ footer {
     font-family: Montserrat;
     font-size: 13px;
     padding: 20px 40px;
+}
+.top{
+  background-color: transparent !important;
 }
 
   .top ul {

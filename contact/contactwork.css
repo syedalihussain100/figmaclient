@@ -23,7 +23,7 @@ a {
 
 /* navbar logo */
 ._imgLogo_container > img {
-  width: 110px;
+  width: 140px;
 }
 
 ._imgLogo_container {
@@ -35,6 +35,7 @@ a {
 .top {
   /* position: absolute; */
   width: 100%;
+  transition: 0.8s all ease-in-out;
 }
 
 .top ul {
@@ -446,7 +447,9 @@ a {
 /* Navbar Animation start here */
 li.nav-item a {
   display: block;
-  color: white;
+  color: #ffffffff;
+  font-weight: bold;
+  font-family: Montserrat;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -565,6 +568,10 @@ li.nav-item a:hover::before {
 @media (max-width: 900px) {
   .form_container_2 {
     flex-direction: column;
+  }
+
+  .top{
+    background-color: transparent !important;
   }
 
   .content_container {
@@ -782,9 +789,9 @@ li.nav-item a:hover::before {
     align-items: center;
   }
 
-  .footer_second > ul{
+  .footer_second > ul {
     margin-top: 20px;
-   }
+  }
 }
 
 @media (max-width: 400px) {
