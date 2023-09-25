@@ -525,10 +525,21 @@ footer {
     display: none;
   }
 
+  .footer_first > p {
+    font-family: Montserrat;
+    font-size: 13px;
+    padding: 20px 40px;
+}
+
   .top ul {
     opacity: 0;
-    flex-direction: column;
+    /* flex-direction: column; */
+    display: none;
   }
+
+  .footer_second > ul{
+    margin-top: 20px;
+   }
 
   .left_top {
     display: none;

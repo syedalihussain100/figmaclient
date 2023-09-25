@@ -430,7 +430,7 @@ li.nav-item a:hover::before {
 
   .footer {
     height: auto;
-    /* width: 100%; */
+    width: 100vw;
   }
 
   .footer_first > p {
@@ -460,7 +460,8 @@ li.nav-item a:hover::before {
   }
   .top ul {
     opacity: 0;
-    flex-direction: column;
+    /* flex-direction: column; */
+    display: none;
   }
 
   .left_top {
