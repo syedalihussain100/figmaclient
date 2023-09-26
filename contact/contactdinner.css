@@ -567,6 +567,11 @@ li.nav-item a:hover::before {
 }
 
 @media screen and (max-width: 900px) {
+
+  body{
+    height: 100%;
+  }
+
   .footer_container {
     flex-direction: column;
     height: auto;
