@@ -13,6 +13,10 @@ body {
   display: none;
 }
 
+.navigation li{
+  font-size: 1rem !important;
+}
+
 .shop_container {
   position: relative;
 }

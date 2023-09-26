@@ -48,6 +48,10 @@ ul {
   display: none;
 }
 
+.navigation li{
+  font-size: 1rem !important;
+}
+
 /* navbar logo */
 ._imgLogo_container > img {
   width: 140px;

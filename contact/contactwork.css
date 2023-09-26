@@ -59,6 +59,10 @@ a {
   display: none;
 }
 
+.navigation li{
+  font-size: 1rem !important;
+}
+
 /* shop nav */
 .shop {
   font-family: Montserrat;
@@ -118,6 +122,7 @@ a {
 
 .contact_dinner_logo {
   width: 250px;
+  margin-top: 70px;
 }
 
 .content_container {

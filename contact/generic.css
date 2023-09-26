@@ -62,6 +62,10 @@ ul {
   display: none;
 }
 
+.navigation li{
+  font-size: 1rem !important;
+}
+
 /* shop nav */
 .shop {
   font-family: Montserrat;
