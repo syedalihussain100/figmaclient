@@ -145,6 +145,8 @@ a {
   position: absolute;
   width: 100%;
   transition: 0.8s all ease-in-out;
+  background: #191919;
+  opacity: 60%;
 }
 
 .top ul {
@@ -438,6 +440,7 @@ li.nav-item a:hover::before {
 
   .top{
     background-color: transparent !important;
+    opacity: 1;
   }
 
   .main_container {
@@ -561,7 +564,7 @@ li.nav-item a:hover::before {
     left: 0;
     height: 100vh;
     width: 100%;
-    background-image: url("./images/home/Listbox\ →\ Option\ →\ Figure.png");
+    background-image: url("./images/home/image1.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

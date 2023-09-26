@@ -32,9 +32,13 @@ a {
 }
 
 .top {
-  position: absolute;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
   width: 100%;
   transition: 0.8s all ease-in-out;
+  background: #191919;
+  opacity: 60%;
 }
 
 .top ul {
@@ -539,6 +543,7 @@ footer {
 }
 .top{
   background-color: transparent !important;
+  opacity: 1;
 }
 
   .top ul {
@@ -599,7 +604,7 @@ footer {
     left: 0;
     height: 100vh;
     width: 100%;
-    background-image: url("./images/home/Listbox\ →\ Option\ →\ Figure.png");
+    background-image: url("./images/home/image1.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

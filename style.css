@@ -64,10 +64,13 @@ ul {
 }
 
 .top1 {
-  position: absolute;
+  position: fixed;
+  z-index: 100;
   width: 100%;
   transition: 0.8s all ease-in-out;
   top: 0px;
+  background: #191919;
+  opacity: 60%;
 }
 
 .top1 ul {
@@ -528,6 +531,7 @@ footer {
 
   .top1{
     background-color: transparent !important;
+    opacity: 1;
   }
 
   .footer_container {
@@ -607,7 +611,7 @@ footer {
     left: 0;
     height: 100vh;
     width: 100%;
-    background-image: url("./images/home/Listbox\ →\ Option\ →\ Figure.png");
+    background-image: url("./images//home/image1.jpeg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
