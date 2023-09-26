@@ -82,6 +82,7 @@ a {
   width: 100%;
   transition: 0.8s all ease-in-out;
   background-color: #191919 !important;
+  opacity: 60%;
 }
 
 .navigation{
