@@ -359,7 +359,7 @@ li.nav-item a {
   display: block;
   color: #ffffffff;
   font-weight: bold;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;

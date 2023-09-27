@@ -8,11 +8,11 @@
   display: none;
 }
 
-._imgLogo_container > img{
+._imgLogo_container > img {
   width: 140px;
 }
 
-._imgLogo_container{
+._imgLogo_container {
   height: 0px;
 }
 
@@ -85,12 +85,17 @@ a {
   opacity: 60%;
 }
 
-.navigation{
+.navigation {
   display: none;
 }
 
-.navigation li{
+.navigation li {
   font-size: 1rem !important;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.navigation li a {
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .top ul {
@@ -421,9 +426,6 @@ li.nav-item a:hover::before {
 
 /* Add this CSS for small screens (e.g., mobile) */
 @media screen and (max-width: 900px) {
-
- 
-
   .slider-container {
     display: flex;
     justify-content: space-between;
@@ -483,12 +485,12 @@ li.nav-item a:hover::before {
     display: none;
   } */
 
-  .top{
+  .top {
     background-color: transparent !important;
     opacity: 1;
   }
 
-  ._imgLogo_container{
+  ._imgLogo_container {
     display: none;
   }
 
@@ -663,15 +665,14 @@ li.nav-item a:hover::before {
     font-size: 10px;
   }
 
-  .fa{
+  .fa {
     /* color: red !important; */
     font-size: 14px !important;
   }
 }
 
 @media screen and (min-width: 200px) and (max-width: 250px) {
- .footer{
- width: 110vw !important;
- }
-
+  .footer {
+    width: 110vw !important;
+  }
 }
